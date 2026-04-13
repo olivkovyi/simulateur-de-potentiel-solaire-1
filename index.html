@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Potentiel Solaire | Paramètres de votre Installation</title>
+    <meta name="description" content="Estimez la production d">
+    <style>
+        :root {
+            --color-primary: #3a5068;
+            --color-secondary: #ae6977;
+            --color-accent: #68ae69;
+            --color-text: #333;
+            --color-background: #f7f7f7;
+            --color-card-bg: #ffffff;
+            --gradient-soft: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.05));
+            --shadow-subtle: 0 4px 10px rgba(0,0,0,0.05);
+            --border-radius: 8px;
+            --font-family-headline: 'Montserrat', sans-serif;
+            --font-family-body: 'Roboto', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400&display=swap');
+
+        body {
+            font-family: var(--font-family-body);
+            color: var(--color-text);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        header h1 {
+            font-family: var(--font-family-headline);
+            font-weight: 700;
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--color-card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+            background: var(--color-card-bg) var(--gradient-soft);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-family: var(--font-family-headline);
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-top: 0;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+            font-weight: 400;
+        }
+
+        input[type="number"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius);
+            box-sizing: border-box;
+            font-family: var(--font-family-body);
+            font-size: 1rem;
+            background-color: #fcfcfc;
+        }
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(104, 174, 105, 0.2);
+        }
+
+
+        button {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-family: var(--font-family-headline);
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            display: block;
+            width: fit-content;
+            margin-top: 1.5rem;
+        }
+
+        button:hover {
+            background-color: #a05a68;
+            transform: translateY(-2px);
+        }
+
+        .result-section {
+            background-color: var(--color-card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+            grid-column: 1 / -1; /* Spans across all columns */
+            margin-top: 2rem;
+            background: var(--color-card-bg) var(--gradient-soft);
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed rgba(0,0,0,0.1);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-item strong {
+            color: var(--color-primary);
+            font-family: var(--font-family-headline);
+        }
+
+        .result-item span {
+            font-weight: 400;
+        }
+
+        .seo-section {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 5px solid var(--color-accent);
+            font-size: 0.9rem;
+        }
+
+        .seo-section h3 {
+            font-family: var(--font-family-headline);
+            font-weight: 600;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .seo-section p {
+            max-width: 900px;
+            margin: 0.5rem auto;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .seo-section a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .seo-section a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://simulateur-de-potentiel-solaire-1.onrender.com">
+    <meta property="og:title" content="Simulateur de Potentiel Solaire">
+    <meta property="og:description" content="Estimez la production d">
+    <meta property="og:url" content="https://simulateur-de-potentiel-solaire-1.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Simulateur de Potentiel Solaire", "description": "Estimez la production d", "url": "https://simulateur-de-potentiel-solaire-1.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="simulateur-de-potentiel-solaire-1" data-runtime-mode="generic_calculator">
+    <header>
+        <h1>Simulateur de Potentiel Énergétique Solaire</h1>
+        <p>Estimez la production et la rentabilité de votre projet photovoltaïque</p>
+    </header>
+
+    <div class="container">
+        <form id="tool-form" class="card">
+            <h2>Paramètres de votre Installation</h2>
+
+            <label for="localisation">Code Postal (France Métropolitaine)</label>
+            <input type="number" id="localisation" value="75001" min="1000" max="98999" required>
+
+            <label for="orientation">Orientation de votre Toiture</label>
+            <select id="orientation" required>
+                <option value="sud">Sud (idéal)</option>
+                <option value="sud-est">Sud-Est</option>
+                <option value="sud-ouest">Sud-Ouest</option>
+                <option value="est">Est</option>
+                <option value="ouest">Ouest</option>
+                <option value="nord">Nord (peu recommandé)</option>
+            </select>
+
+            <label for="inclinaison">Inclinaison des Panneaux (en degrés)</label>
+            <input type="number" id="inclinaison" value="35" min="0" max="90" required>
+
+            <label for="surface">Surface disponible (m²)</label>
+            <input type="number" id="surface" value="30" min="5" required>
+
+            <label for="puissance-creste">Puissance crête par m² (Wc/m²)</label>
+            <input type="number" id="puissance-creste" value="180" min="100" max="250" required>
+
+            <label for="consommation-annuelle">Consommation annuelle (kWh)</label>
+            <input type="number" id="consommation-annuelle" value="4000" min="500" required>
+
+            <label for="prix-kwh">Prix moyen du kWh (€)</label>
+            <input type="number" id="prix-kwh" value="0.25" step="0.01" min="0.10" max="0.50" required>
+
+            <label for="cout-installation">Coût estimé de l'installation (€)</label>
+            <input type="number" id="cout-installation" value="9000" min="1000" required>
+
+            <button type="submit" id="tool-submit">Calculer mon Potentiel Solaire</button>
+        </form>
+
+        <div class="card">
+            <h2>Comprendre les Paramètres</h2>
+            <p><strong>Code Postal :</strong> Influence l'ensoleillement et les subventions régionales.</p>
+            <p><strong>Orientation :</strong> Un toit orienté plein Sud offre le meilleur rendement. Les orientations Est et Ouest permettent de mieux capter l'énergie matin et soir.</p>
+            <p><strong>Inclinaison :</strong> En France, une inclinaison entre 30 et 35 degrés est souvent optimale pour maximiser la production annuelle.</p>
+            <p><strong>Surface :</strong> La place disponible détermine le nombre de panneaux que vous pouvez installer et donc la puissance totale.</p>
+            <p><strong>Puissance crête/m² :</strong> Indique l'efficacité de vos panneaux. Un chiffre plus élevé signifie plus de puissance sur une même surface.</p>
+            <p><strong>Consommation annuelle :</strong> Pour évaluer l'autoconsommation et la part de vos besoins couverts.</p>
+            <p><strong>Prix du kWh :</strong> Permet d'estimer les économies réalisées sur votre facture.</p>
+            <p><strong>Coût installation :</strong> Le prix total de votre projet, essentiel pour calculer le retour sur investissement.</p>
+        </div>
+
+        <div id="tool-result" class="result-section" style="display: none;">
+            <h2 id="result-headline">Vos Résultats Estimés</h2>
+            <div class="result-item">
+                <strong>Production annuelle estimée :</strong> <span id="production-annuelle"></span> kWh
+            </div>
+            <div class="result-item">
+                <strong>Puissance crête totale :</strong> <span id="puissance-totale"></span> Wc
+            </div>
+            <div class="result-item">
+                <strong>Économies annuelles estimées :</strong> <span id="economies-annuelles"></span> €
+            </div>
+            <div class="result-item">
+                <strong>Taux d'autoconsommation :</strong> <span id="autoconsommation"></span> %
+            </div>
+            <div class="result-item">
+                <strong>Retour sur Investissement (amortissement) :</strong> <span id="retour-investissement"></span> ans
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">Ces estimations sont indicatives et basées sur des moyennes nationales. Pour une étude précise, consultez un professionnel local.</p>
+            <button data-affiliate-slot="installation-devis" style="background-color: var(--color-accent); margin-top: 1.5rem;">Demander un devis personnalisé</button>
+        </div>
+    </div>
+
+    <div class="seo-section">
+        <h3>Votre Projet Solaire en France : De l'Idée à la Réalisation</h3>
+        <p>Découvrez le potentiel de l'énergie solaire pour votre habitation en France. Que vous soyez en <strong>Île-de-France</strong>, en <strong>Occitanie</strong>, en <strong>PACA</strong>, ou partout ailleurs, notre simulateur vous offre une première estimation de la <a href="#">rentabilité de vos panneaux solaires</a>. Comprenez comment optimiser votre <a href="#">autoconsommation solaire</a>, évaluez les <a href="#">économies d'énergie</a> réalisables et le <a href="#">retour sur investissement photovoltaïque</a>. Nos outils vous aident à démystifier l'installation de <a href="#">panneaux photovoltaïques</a> sur votre toit. Estimez la <a href="#">production électrique annuelle</a> et les aides disponibles pour le <a href="#">financement solaire</a> en France. Comparez les différentes <a href="#">technologies de panneaux solaires</a> et trouvez le meilleur <a href="#">installateur RGE</a> près de chez vous pour une transition énergétique réussie.</p>
+    </div>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const localisation = parseInt(document.getElementById('localisation').value);
+            const orientation = document.getElementById('orientation').value;
+            const inclinaison = parseInt(document.getElementById('inclinaison').value);
+            const surface = parseInt(document.getElementById('surface').value);
+            const puissanceCresteM2 = parseInt(document.getElementById('puissance-creste').value);
+            const consommationAnnuelle = parseInt(document.getElementById('consommation-annuelle').value);
+            const prixKwh = parseFloat(document.getElementById('prix-kwh').value);
+            const coutInstallation = parseFloat(document.getElementById('cout-installation').value);
+
+            // Mock data for regional insolation (kWh/kWp/year)
+            // Simplified for demonstration, a real app would use more granular data
+            const insolationData = {
+                'nord': { base: 900, nord: 0.7, est: 0.85, ouest: 0.85, sud_est: 0.95, sud_ouest: 0.95, sud: 1.0 }, // e.g., Lille
+                'centre': { base: 1100, nord: 0.6, est: 0.8, ouest: 0.8, sud_est: 0.9, sud_ouest: 0.9, sud: 0.98 }, // e.g., Paris
+                'sud': { base: 1300, nord: 0.5, est: 0.7, ouest: 0.7, sud_est: 0.85, sud_ouest: 0.85, sud: 0.95 } // e.g., Marseille
+            };
+
+            let regionKey;
+            if (localisation >= 1000 && localisation < 30000) { // North of France (rough estimate)
+                regionKey = 'nord';
+            } else if (localisation >= 30000 && localisation < 60000) { // Center of France
+                regionKey = 'centre';
+            } else { // South of France
+                regionKey = 'sud';
+            }
+
+            const regionInsolation = insolationData[regionKey].base;
+            const orientationFactor = insolationData[regionKey][orientation.replace('-', '_')]; // Normalize key
+
+            // Adjust for inclination (simplified, optimal is around 30-35 deg)
+            let inclinationFactor = 1.0;
+            if (inclinaison < 25 || inclinaison > 45) {
+                inclinationFactor = 0.9;
+            } else if (inclinaison < 15 || inclinaison > 60) {
+                inclinationFactor = 0.8;
+            }
+
+            const puissanceTotaleWc = surface * puissanceCresteM2;
+            const productionAnnuelleKWh = (puissanceTotaleWc / 1000) * regionInsolation * orientationFactor * inclinationFactor;
+
+            // Simplified Autoconsumption (e.g., 60-80% for domestic, depends on consumption pattern)
+            const autoconsommationRate = Math.min(1, consommationAnnuelle / productionAnnuelleKWh) * 0.7; // Assume 70% of production is autoconsumed within consumption limits
+            const productionAutoconsommee = Math.min(productionAnnuelleKWh * autoconsommationRate, consommationAnnuelle);
+            const economieAnnuelle = productionAutoconsommee * prixKwh;
+            
+            const retourSurInvestissement = coutInstallation / economieAnnuelle;
+
+            document.getElementById('production-annuelle').textContent = productionAnnuelleKWh.toFixed(0);
+            document.getElementById('puissance-totale').textContent = puissanceTotaleWc.toFixed(0);
+            document.getElementById('economies-annuelles').textContent = economieAnnuelle.toFixed(2);
+            document.getElementById('autoconsommation').textContent = (autoconsommationRate * 100).toFixed(0);
+            document.getElementById('retour-investissement').textContent = retourSurInvestissement.toFixed(1);
+
+            document.getElementById('tool-result').style.display = 'block';
+            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank", "noopener");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
