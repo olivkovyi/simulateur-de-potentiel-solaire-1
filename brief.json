@@ -1,0 +1,286 @@
+{
+  "run_id": "run-1776040563201",
+  "job_index": 1,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 3,
+    "archetype": "calculator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Évaluez la viabilité de votre projet solaire. Obtenez une estimation de production et de rentabilité pour vot…",
+    "notes": "Estimez la production d'énergie et le retour sur investissement de votre projet de panneaux solaires en fonction de votre localisation, de votre toiture et de votre consommation.\nUtilisateurs : propriétaires, installateurs solaires, conseillers en énergie. Thèmes : énergie renouvelable, écologie, finances. Focus : personnalisation des paramètres (orientation, inclinaison, type de panneaux).",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "calculator",
+      "tool",
+      "generator"
+    ],
+    "forced_design_theme": "mechanical-botanical",
+    "forced_structure_preset": "precision-bento",
+    "site_idea_title": "Simulateur de Potentiel Énergétique d'une Installation Solaire Domestique",
+    "site_idea_summary": "Estimez la production d'énergie et le retour sur investissement de votre projet de panneaux solaires en fonction de votre localisation, de votre toiture et de votre consommation."
+  },
+  "site_spec": {
+    "slug": "simulateur-de-potentiel-solaire-1",
+    "theme": {
+      "name": "Mechanical Botanical",
+      "slug": "mechanical-botanical",
+      "eyebrow": "Organic Systems",
+      "family": "mechanical-botanical",
+      "moods": [
+        "organic",
+        "futuristic",
+        "balanced",
+        "fresh"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "eco tools",
+        "wellness tools",
+        "sustainability",
+        "travel tools",
+        "consumer utility"
+      ],
+      "keywords": [
+        "organic",
+        "tech",
+        "botanical",
+        "iridescent",
+        "fresh"
+      ],
+      "token_index": [
+        "balanced",
+        "botanical",
+        "calculator",
+        "consumer",
+        "eco",
+        "fresh",
+        "futuristic",
+        "generator",
+        "iridescent",
+        "mechanical",
+        "organic",
+        "sustainability",
+        "systems",
+        "tech",
+        "tool",
+        "tools",
+        "travel",
+        "utility",
+        "wellness"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap",
+      "display_font": "\"Sora\", sans-serif",
+      "body_font": "\"Manrope\", sans-serif",
+      "layout": "split",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "orbs",
+      "hero_template": "1.08fr 0.92fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 3,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "22px",
+      "palette": {
+        "bg": "linear-gradient(145deg, #081c15 0%, #1b4332 42%, #c7f9cc 100%)",
+        "surface": "rgba(8, 28, 21, 0.74)",
+        "surface_border": "rgba(128,237,153,0.18)",
+        "text": "#f1fff4",
+        "muted": "#b7e4c7",
+        "accent": "#80ed99",
+        "accent_alt": "#72ddf7",
+        "hero_glow": "rgba(128, 237, 153, 0.18)",
+        "button_text": "#062012",
+        "panel_alt": "rgba(255,255,255,0.04)",
+        "shadow": "0 30px 88px rgba(4, 12, 8, 0.34)",
+        "input_fill": "rgba(255,255,255,0.05)"
+      }
+    },
+    "structure": {
+      "name": "Precision Bento",
+      "slug": "precision-bento",
+      "hero_variant": "split",
+      "proof_variant": "metrics",
+      "section_order": [
+        "features",
+        "proof",
+        "seo",
+        "faq"
+      ],
+      "feature_columns": 4,
+      "faq_columns": 3,
+      "family": "precision-bento",
+      "moods": [
+        "clean",
+        "modular",
+        "premium"
+      ],
+      "archetypes": [
+        "tool",
+        "calculator",
+        "generator"
+      ],
+      "niches": [
+        "saas",
+        "admin",
+        "compliance",
+        "analysis"
+      ],
+      "keywords": [
+        "bento",
+        "precision",
+        "cards",
+        "operator"
+      ],
+      "token_index": [
+        "admin",
+        "analysis",
+        "bento",
+        "calculator",
+        "cards",
+        "clean",
+        "compliance",
+        "faq",
+        "features",
+        "generator",
+        "metrics",
+        "modular",
+        "operator",
+        "precision",
+        "premium",
+        "proof",
+        "saas",
+        "seo",
+        "split",
+        "tool"
+      ]
+    },
+    "render_direction": "signal-bento",
+    "render_direction_name": "Signal Bento",
+    "page_blueprint": "signal-matrix",
+    "page_blueprint_name": "Signal Matrix",
+    "title": "Simulateur de Potentiel Solaire",
+    "tagline": "Paramètres de votre Installation",
+    "description": "Estimez la production d",
+    "feature_prefix": "Bloc",
+    "action": "Utiliser l'outil",
+    "cta_primary": "Calculer mon Potentiel Solaire",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "amount",
+        "label": "Montant de base",
+        "type": "number",
+        "placeholder": "7500",
+        "weight": 1.0
+      },
+      {
+        "id": "duration",
+        "label": "Durée estimée",
+        "type": "number",
+        "placeholder": "12",
+        "weight": 0.42
+      },
+      {
+        "id": "plan",
+        "label": "Niveau de service",
+        "type": "select",
+        "options": [
+          {
+            "label": "Essentiel",
+            "value": 1.0
+          },
+          {
+            "label": "Performance",
+            "value": 1.18
+          },
+          {
+            "label": "Premium",
+            "value": 1.34
+          }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Signal Bento",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Résultat recommandé",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Signal Bento",
+      "Calculer mon Potentiel Solaire",
+      "Résultat recommandé",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Résultat recommandé",
+    "result_unit": "EUR",
+    "runtime_mode": "generic_calculator",
+    "page_variant": "console",
+    "faq_topic": "Simulateur de Potentiel Énergétique d'une Installation Solaire Domestique",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Simulateur de Potentiel Énergétique d'une Installation Solaire Domestique ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Simulateur de Potentiel Énergétique d'une Installation Solaire Domestique et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Simulateur de Potentiel Solaire | Paramètres de votre Installation</title>\n    <meta name=\"description\" content=\"Estimez la production d\">\n    <style>\n        :root {\n            --color-primary: #3a5068;\n            --color-secondary: #ae6977;\n            --color-accent: #68ae69;\n            --color-text: #333;\n            --color-background: #f7f7f7;\n            --color-card-bg: #ffffff;\n            --gradient-soft: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.05));\n            --shadow-subtle: 0 4px 10px rgba(0,0,0,0.05);\n            --border-radius: 8px;\n            --font-family-headline: 'Montserrat', sans-serif;\n            --font-family-body: 'Roboto', sans-serif;\n        }\n\n        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400&display=swap');\n\n        body {\n            font-family: var(--font-family-body);\n            color: var(--color-text);\n            margin: 0;\n            padding: 0;\n            background-color: var(--color-background);\n            line-height: 1.6;\n        }\n\n        header {\n            background-color: var(--color-primary);\n            color: #fff;\n            padding: 1.5rem 0;\n            text-align: center;\n            box-shadow: var(--shadow-subtle);\n        }\n\n        header h1 {\n            font-family: var(--font-family-headline);\n            font-weight: 700;\n            margin: 0;\n            font-size: 2.2rem;\n        }\n\n        .container {\n            max-width: 1200px;\n            margin: 2rem auto;\n            padding: 0 1.5rem;\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n            gap: 2rem;\n        }\n\n        .card {\n            background-color: var(--color-card-bg);\n            padding: 2rem;\n            border-radius: var(--border-radius);\n            box-shadow: var(--shadow-subtle);\n            border: 1px solid rgba(0,0,0,0.05);\n            transition: transform 0.2s ease-in-out;\n            background: var(--color-card-bg) var(--gradient-soft);\n        }\n\n        .card:hover {\n            transform: translateY(-5px);\n        }\n\n        h2 {\n            font-family: var(--font-family-headline);\n            color: var(--color-primary);\n            font-weight: 600;\n            margin-top: 0;\n            font-size: 1.6rem;\n            border-bottom: 2px solid var(--color-secondary);\n            padding-bottom: 0.5rem;\n            margin-bottom: 1.5rem;\n        }\n\n        label {\n            display: block;\n            margin-bottom: 0.5rem;\n            color: var(--color-text);\n            font-weight: 400;\n        }\n\n        input[type=\"number\"],\n        select {\n            width: calc(100% - 20px);\n            padding: 10px;\n            margin-bottom: 1rem;\n            border: 1px solid #ccc;\n            border-radius: var(--border-radius);\n            box-sizing: border-box;\n            font-family: var(--font-family-body);\n            font-size: 1rem;\n            background-color: #fcfcfc;\n        }\n        input[type=\"number\"]:focus,\n        select:focus {\n            outline: none;\n            border-color: var(--color-accent);\n            box-shadow: 0 0 0 3px rgba(104, 174, 105, 0.2);\n        }\n\n\n        button {\n            background-color: var(--color-secondary);\n            color: white;\n            padding: 12px 25px;\n            border: none;\n            border-radius: var(--border-radius);\n            cursor: pointer;\n            font-size: 1.1rem;\n            font-family: var(--font-family-headline);\n            font-weight: 600;\n            transition: background-color 0.2s ease, transform 0.2s ease;\n            display: block;\n            width: fit-content;\n            margin-top: 1.5rem;\n        }\n\n        button:hover {\n            background-color: #a05a68;\n            transform: translateY(-2px);\n        }\n\n        .result-section {\n            background-color: var(--color-card-bg);\n            padding: 2rem;\n            border-radius: var(--border-radius);\n            box-shadow: var(--shadow-subtle);\n            grid-column: 1 / -1; /* Spans across all columns */\n            margin-top: 2rem;\n            background: var(--color-card-bg) var(--gradient-soft);\n        }\n\n        .result-item {\n            display: flex;\n            justify-content: space-between;\n            padding: 0.8rem 0;\n            border-bottom: 1px dashed rgba(0,0,0,0.1);\n        }\n\n        .result-item:last-child {\n            border-bottom: none;\n        }\n\n        .result-item strong {\n            color: var(--color-primary);\n            font-family: var(--font-family-headline);\n        }\n\n        .result-item span {\n            font-weight: 400;\n        }\n\n        .seo-section {\n            background-color: var(--color-primary);\n            color: #fff;\n            padding: 2rem 1.5rem;\n            margin-top: 3rem;\n            text-align: center;\n            border-top: 5px solid var(--color-accent);\n            font-size: 0.9rem;\n        }\n\n        .seo-section h3 {\n            font-family: var(--font-family-headline);\n            font-weight: 600;\n            font-size: 1.4rem;\n            margin-bottom: 1rem;\n        }\n\n        .seo-section p {\n            max-width: 900px;\n            margin: 0.5rem auto;\n            line-height: 1.8;\n            opacity: 0.9;\n        }\n\n        .seo-section a {\n            color: var(--color-accent);\n            text-decoration: none;\n            transition: color 0.2s ease;\n        }\n\n        .seo-section a:hover {\n            color: #fff;\n        }\n\n        @media (max-width: 768px) {\n            .container {\n                grid-template-columns: 1fr;\n            }\n            header h1 {\n                font-size: 1.8rem;\n            }\n            h2 {\n                font-size: 1.4rem;\n            }\n            button {\n                width: 100%;\n            }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://simulateur-de-potentiel-solaire-1.onrender.com\">\n    <meta property=\"og:title\" content=\"Simulateur de Potentiel Solaire\">\n    <meta property=\"og:description\" content=\"Estimez la production d\">\n    <meta property=\"og:url\" content=\"https://simulateur-de-potentiel-solaire-1.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Simulateur de Potentiel Solaire\", \"description\": \"Estimez la production d\", \"url\": \"https://simulateur-de-potentiel-solaire-1.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"simulateur-de-potentiel-solaire-1\" data-runtime-mode=\"generic_calculator\">\n    <header>\n        <h1>Simulateur de Potentiel Énergétique Solaire</h1>\n        <p>Estimez la production et la rentabilité de votre projet photovoltaïque</p>\n    </header>\n\n    <div class=\"container\">\n        <form id=\"tool-form\" class=\"card\">\n            <h2>Paramètres de votre Installation</h2>\n\n            <label for=\"localisation\">Code Postal (France Métropolitaine)</label>\n            <input type=\"number\" id=\"localisation\" value=\"75001\" min=\"1000\" max=\"98999\" required>\n\n            <label for=\"orientation\">Orientation de votre Toiture</label>\n            <select id=\"orientation\" required>\n                <option value=\"sud\">Sud (idéal)</option>\n                <option value=\"sud-est\">Sud-Est</option>\n                <option value=\"sud-ouest\">Sud-Ouest</option>\n                <option value=\"est\">Est</option>\n                <option value=\"ouest\">Ouest</option>\n                <option value=\"nord\">Nord (peu recommandé)</option>\n            </select>\n\n            <label for=\"inclinaison\">Inclinaison des Panneaux (en degrés)</label>\n            <input type=\"number\" id=\"inclinaison\" value=\"35\" min=\"0\" max=\"90\" required>\n\n            <label for=\"surface\">Surface disponible (m²)</label>\n            <input type=\"number\" id=\"surface\" value=\"30\" min=\"5\" required>\n\n            <label for=\"puissance-creste\">Puissance crête par m² (Wc/m²)</label>\n            <input type=\"number\" id=\"puissance-creste\" value=\"180\" min=\"100\" max=\"250\" required>\n\n            <label for=\"consommation-annuelle\">Consommation annuelle (kWh)</label>\n            <input type=\"number\" id=\"consommation-annuelle\" value=\"4000\" min=\"500\" required>\n\n            <label for=\"prix-kwh\">Prix moyen du kWh (€)</label>\n            <input type=\"number\" id=\"prix-kwh\" value=\"0.25\" step=\"0.01\" min=\"0.10\" max=\"0.50\" required>\n\n            <label for=\"cout-installation\">Coût estimé de l'installation (€)</label>\n            <input type=\"number\" id=\"cout-installation\" value=\"9000\" min=\"1000\" required>\n\n            <button type=\"submit\" id=\"tool-submit\">Calculer mon Potentiel Solaire</button>\n        </form>\n\n        <div class=\"card\">\n            <h2>Comprendre les Paramètres</h2>\n            <p><strong>Code Postal :</strong> Influence l'ensoleillement et les subventions régionales.</p>\n            <p><strong>Orientation :</strong> Un toit orienté plein Sud offre le meilleur rendement. Les orientations Est et Ouest permettent de mieux capter l'énergie matin et soir.</p>\n            <p><strong>Inclinaison :</strong> En France, une inclinaison entre 30 et 35 degrés est souvent optimale pour maximiser la production annuelle.</p>\n            <p><strong>Surface :</strong> La place disponible détermine le nombre de panneaux que vous pouvez installer et donc la puissance totale.</p>\n            <p><strong>Puissance crête/m² :</strong> Indique l'efficacité de vos panneaux. Un chiffre plus élevé signifie plus de puissance sur une même surface.</p>\n            <p><strong>Consommation annuelle :</strong> Pour évaluer l'autoconsommation et la part de vos besoins couverts.</p>\n            <p><strong>Prix du kWh :</strong> Permet d'estimer les économies réalisées sur votre facture.</p>\n            <p><strong>Coût installation :</strong> Le prix total de votre projet, essentiel pour calculer le retour sur investissement.</p>\n        </div>\n\n        <div id=\"tool-result\" class=\"result-section\" style=\"display: none;\">\n            <h2 id=\"result-headline\">Vos Résultats Estimés</h2>\n            <div class=\"result-item\">\n                <strong>Production annuelle estimée :</strong> <span id=\"production-annuelle\"></span> kWh\n            </div>\n            <div class=\"result-item\">\n                <strong>Puissance crête totale :</strong> <span id=\"puissance-totale\"></span> Wc\n            </div>\n            <div class=\"result-item\">\n                <strong>Économies annuelles estimées :</strong> <span id=\"economies-annuelles\"></span> €\n            </div>\n            <div class=\"result-item\">\n                <strong>Taux d'autoconsommation :</strong> <span id=\"autoconsommation\"></span> %\n            </div>\n            <div class=\"result-item\">\n                <strong>Retour sur Investissement (amortissement) :</strong> <span id=\"retour-investissement\"></span> ans\n            </div>\n            <p style=\"margin-top: 1.5rem; font-size: 0.9rem; color: #666;\">Ces estimations sont indicatives et basées sur des moyennes nationales. Pour une étude précise, consultez un professionnel local.</p>\n            <button data-affiliate-slot=\"installation-devis\" style=\"background-color: var(--color-accent); margin-top: 1.5rem;\">Demander un devis personnalisé</button>\n        </div>\n    </div>\n\n    <div class=\"seo-section\">\n        <h3>Votre Projet Solaire en France : De l'Idée à la Réalisation</h3>\n        <p>Découvrez le potentiel de l'énergie solaire pour votre habitation en France. Que vous soyez en <strong>Île-de-France</strong>, en <strong>Occitanie</strong>, en <strong>PACA</strong>, ou partout ailleurs, notre simulateur vous offre une première estimation de la <a href=\"#\">rentabilité de vos panneaux solaires</a>. Comprenez comment optimiser votre <a href=\"#\">autoconsommation solaire</a>, évaluez les <a href=\"#\">économies d'énergie</a> réalisables et le <a href=\"#\">retour sur investissement photovoltaïque</a>. Nos outils vous aident à démystifier l'installation de <a href=\"#\">panneaux photovoltaïques</a> sur votre toit. Estimez la <a href=\"#\">production électrique annuelle</a> et les aides disponibles pour le <a href=\"#\">financement solaire</a> en France. Comparez les différentes <a href=\"#\">technologies de panneaux solaires</a> et trouvez le meilleur <a href=\"#\">installateur RGE</a> près de chez vous pour une transition énergétique réussie.</p>\n    </div>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const localisation = parseInt(document.getElementById('localisation').value);\n            const orientation = document.getElementById('orientation').value;\n            const inclinaison = parseInt(document.getElementById('inclinaison').value);\n            const surface = parseInt(document.getElementById('surface').value);\n            const puissanceCresteM2 = parseInt(document.getElementById('puissance-creste').value);\n            const consommationAnnuelle = parseInt(document.getElementById('consommation-annuelle').value);\n            const prixKwh = parseFloat(document.getElementById('prix-kwh').value);\n            const coutInstallation = parseFloat(document.getElementById('cout-installation').value);\n\n            // Mock data for regional insolation (kWh/kWp/year)\n            // Simplified for demonstration, a real app would use more granular data\n            const insolationData = {\n                'nord': { base: 900, nord: 0.7, est: 0.85, ouest: 0.85, sud_est: 0.95, sud_ouest: 0.95, sud: 1.0 }, // e.g., Lille\n                'centre': { base: 1100, nord: 0.6, est: 0.8, ouest: 0.8, sud_est: 0.9, sud_ouest: 0.9, sud: 0.98 }, // e.g., Paris\n                'sud': { base: 1300, nord: 0.5, est: 0.7, ouest: 0.7, sud_est: 0.85, sud_ouest: 0.85, sud: 0.95 } // e.g., Marseille\n            };\n\n            let regionKey;\n            if (localisation >= 1000 && localisation < 30000) { // North of France (rough estimate)\n                regionKey = 'nord';\n            } else if (localisation >= 30000 && localisation < 60000) { // Center of France\n                regionKey = 'centre';\n            } else { // South of France\n                regionKey = 'sud';\n            }\n\n            const regionInsolation = insolationData[regionKey].base;\n            const orientationFactor = insolationData[regionKey][orientation.replace('-', '_')]; // Normalize key\n\n            // Adjust for inclination (simplified, optimal is around 30-35 deg)\n            let inclinationFactor = 1.0;\n            if (inclinaison < 25 || inclinaison > 45) {\n                inclinationFactor = 0.9;\n            } else if (inclinaison < 15 || inclinaison > 60) {\n                inclinationFactor = 0.8;\n            }\n\n            const puissanceTotaleWc = surface * puissanceCresteM2;\n            const productionAnnuelleKWh = (puissanceTotaleWc / 1000) * regionInsolation * orientationFactor * inclinationFactor;\n\n            // Simplified Autoconsumption (e.g., 60-80% for domestic, depends on consumption pattern)\n            const autoconsommationRate = Math.min(1, consommationAnnuelle / productionAnnuelleKWh) * 0.7; // Assume 70% of production is autoconsumed within consumption limits\n            const productionAutoconsommee = Math.min(productionAnnuelleKWh * autoconsommationRate, consommationAnnuelle);\n            const economieAnnuelle = productionAutoconsommee * prixKwh;\n            \n            const retourSurInvestissement = coutInstallation / economieAnnuelle;\n\n            document.getElementById('production-annuelle').textContent = productionAnnuelleKWh.toFixed(0);\n            document.getElementById('puissance-totale').textContent = puissanceTotaleWc.toFixed(0);\n            document.getElementById('economies-annuelles').textContent = economieAnnuelle.toFixed(2);\n            document.getElementById('autoconsommation').textContent = (autoconsommationRate * 100).toFixed(0);\n            document.getElementById('retour-investissement').textContent = retourSurInvestissement.toFixed(1);\n\n            document.getElementById('tool-result').style.display = 'block';\n            document.getElementById('tool-result').scrollIntoView({ behavior: 'smooth' });\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.setAttribute(\"rel\", \"nofollow sponsored noopener noreferrer\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\", \"noopener\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
