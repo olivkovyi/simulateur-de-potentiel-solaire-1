@@ -1,5 +1,5 @@
 {
-  "run_id": "run-1778151584252",
+  "run_id": "run-1778152428249",
   "job_index": 1,
   "params": {
     "owner_user_id": "user-1774822953462",
@@ -7,15 +7,15 @@
     "owner_display_name": "Administrator",
     "count": 1,
     "archetype": "calculator",
-    "market": "Growth republish",
+    "market": "Estimez la production d",
     "language": "fr",
     "country": "FR",
     "brief": "Estimez la production d",
     "notes": "Growth module republish of an updated local artifact.",
     "import_notes": "Growth module republish of an updated local artifact.",
-    "growth_job_id": "growth-1778151447165",
+    "growth_job_id": "growth-1778152198723",
     "growth_slug": "simulateur-de-potentiel-solaire-1",
-    "growth_kind": "affiliate",
+    "growth_kind": "content",
     "dashboard_mode": "builder",
     "network_site_format": "forum",
     "network_primary_topic": "",
@@ -54,8 +54,8 @@
     "forced_slug": "simulateur-de-potentiel-solaire-1",
     "site_idea_title": "Simulateur de Potentiel Solaire",
     "site_idea_summary": "Estimez la production d",
-    "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
-    "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
+    "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1",
+    "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1",
     "import_analysis_model": "preserved-analysis"
   },
   "import_analysis": {
@@ -66,7 +66,7 @@
     "archetype": "calculator",
     "language": "fr",
     "country": "FR",
-    "market": "Growth republish",
+    "market": "Estimez la production d",
     "characteristics": [
       "imported static site",
       "ready file deploy",
@@ -74,6 +74,6 @@
     ],
     "suggested_slug": "simulateur-de-potentiel-solaire-1"
   },
-  "source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
-  "deploy_root": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1"
+  "source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1",
+  "deploy_root": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1"
 }
