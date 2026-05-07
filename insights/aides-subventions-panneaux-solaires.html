@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprendre les Aides et Subventions pour l&#x27;Installation Solaire en France</title>
+  <meta name="description" content="Un guide complet des dispositifs de soutien financier disponibles en France pour l&#x27;installation de panneaux solaires, incluant la prime à l&#x27;autoconsommation, le tarif de rachat, e…">
+  <style>
+    :root {
+      --page-bg: #f4efe7;
+      --page-fg: #18212c;
+      --muted: #445164;
+      --surface: rgba(255, 250, 244, 0.96);
+      --surface-alt: rgba(248, 241, 232, 0.9);
+      --border: rgba(28, 34, 44, 0.09);
+      --accent: #3a5068;
+      --accent-alt: #ae6977;
+      --button-text: #13202c;
+      --shadow: 0 26px 60px rgba(55, 45, 24, 0.12);
+      --font-stack: var(--font-family-body);
+      --hero-glow: color-mix(in srgb, #ae6977 18%, transparent);
+      --radius: 34px;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: var(--font-stack); background: radial-gradient(circle at top, var(--hero-glow), transparent 32%), var(--page-bg); color: var(--page_fg); margin:0; min-height:100vh; }
+    main { max-width: 980px; margin: 0 auto; padding: 48px 20px 90px; }
+    .content-page { position: relative; }
+    .content-page::before {
+      content: "";
+      position: absolute;
+      inset: 8px 8px auto auto;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, var(--accent-alt) 0%, transparent 70%);
+      opacity: .12;
+      filter: blur(12px);
+      pointer-events: none;
+    }
+    .article-shell {
+      position: relative;
+      background: linear-gradient(180deg, var(--surface), var(--surface-alt));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .article-shell--split { display:grid; grid-template-columns: minmax(0, 1.1fr) 220px; gap: 26px; align-items: start; }
+    .article-shell--split .article-sidecard { display:flex; }
+    .article-shell--editorial::after,
+    .article-shell--soft-card::after,
+    .article-shell--briefing::after,
+    .article-shell--framework::after {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+      opacity: .9;
+    }
+    .article-shell--soft-card { border-radius: 34px; }
+    .article-main { min-width: 0; }
+    .article-sidecard {
+      display:none;
+      align-self: stretch;
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) - 8px);
+      padding: 18px;
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+    }
+    .article-sidecard strong { color: var(--page-fg); display:block; margin-bottom:8px; }
+    .eyebrow { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.16em; }
+    h1 { font-size: clamp(2.1rem, 5vw, 3.7rem); line-height: .95; margin: 14px 0 18px; max-width: 12ch; }
+    h2 { font-size: 1.18rem; margin-top: 30px; margin-bottom: 10px; }
+    p, li { color: var(--muted); line-height:1.76; }
+    section + section { margin-top: 10px; }
+    a { color: var(--accent); }
+    .article-lead { font-size: 1.02rem; color: var(--page-fg); max-width: 62ch; }
+    .article-style-note { margin: 18px 0 0; color: var(--muted); font-size: .94rem; max-width: 58ch; }
+    .article-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+    .article-actions a {
+      text-decoration:none;
+      padding:13px 18px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+      color: var(--button-text);
+      font-weight: 700;
+      box-shadow: 0 16px 32px rgba(0,0,0,.14);
+    }
+    .faq { margin-top: 28px; display:grid; gap:10px; }
+    details { border:1px solid var(--border); border-radius:18px; padding:14px 16px; background:rgba(255,255,255,.025); }
+    summary { cursor:pointer; color: var(--page-fg); font-weight: 600; }
+    .article-tail { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .content-page--briefing .content-section {
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.025);
+      border-radius: 18px;
+    }
+    .content-page--checklist .content-section ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: grid;
+      gap: 10px;
+    }
+    .content-page--framework .content-section {
+      padding-left: 18px;
+      border-left: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    }
+    .section-step {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      margin-top: 10px;
+    }
+    .section-step__index {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--accent) 22%, transparent);
+      color: var(--page-fg);
+      font-weight: 700;
+      font-size: .88rem;
+    }
+    @media (max-width: 820px) {
+      .article-shell--split { grid-template-columns: 1fr; }
+      .article-sidecard { display:none !important; }
+      .article-shell { padding: 26px 22px; }
+      h1 { max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="content-page content-page--split content-page--briefing">
+    <article class="article-shell article-shell--split article-shell--briefing">
+      <div class="article-main">
+      <div class="eyebrow">Simulateur de Potentiel Solaire</div>
+      <h1>Comprendre les Aides et Subventions pour l&#x27;Installation Solaire en France</h1>
+      <p class="article-lead">L&#x27;investissement dans l&#x27;énergie solaire représente une démarche écologique et économique pertinente. Pour encourager cette transition énergétique, de nombreuses aides et subventions sont mises en place en France. Connaître ces dispositifs…</p>
+      <p class="article-style-note">The article uses a structured approach with clear headings and a factual tone, avoiding overly promotional language. The FAQ section provides quick answers to common questions. The CTA is direct and concise.</p>
+      <section class="content-section content-section--briefing"><h2>La Prime à l&#x27;Autoconsommation</h2><p>La prime à l&#x27;autoconsommation est un soutien financier de l&#x27;État français destiné aux particuliers qui choisissent de consommer une partie ou la totalité de l&#x27;électricité produite par leurs panneaux solaires. Cette prime est versée sur une période de cinq ans et son montant dépe…</p><p>Pour bénéficier de cette prime, l&#x27;installation doit être réalisée par un professionnel certifié RGE (Reconnu Garant de l&#x27;Environnement) et être raccordée au réseau public. La vente du surplus de production à EDF Obligation d&#x27;Achat (EDF OA) est compatible avec la prime à l&#x27;autoco…</p></section><section class="content-section content-section--briefing"><h2>Le Tarif de Rachat Garanti pour la Vente de Surplus ou de Totalité</h2><p>Au-delà de la prime à l&#x27;autoconsommation, le mécanisme du tarif de rachat garanti représente un pilier majeur des aides aux projets solaires. Il permet aux producteurs d&#x27;électricité photovoltaïque de vendre leur surplus de production ou la totalité de leur production à un tarif…</p><p>Ce dispositif offre une visibilité et une sécurité financière importantes pour les investisseurs, garantissant des revenus stables sur le long terme. Que vous optiez pour l&#x27;autoconsommation avec vente du surplus ou pour la vente totale de votre production, un contrat d&#x27;achat est…</p></section><section class="content-section content-section--briefing"><h2>Les Aides Locales et Autres Dispositifs</h2><p>En complément des aides nationales, de nombreuses collectivités territoriales (régions, départements, communes) proposent leurs propres dispositifs de soutien à l&#x27;installation de panneaux solaires. Ces aides peuvent prendre la forme de subventions directes, d&#x27;exonérations fiscal…</p><p>Il est fortement recommandé de se renseigner auprès de votre mairie, de votre conseil départemental et de votre conseil régional pour connaître les aides spécifiques disponibles dans votre zone géographique. Ces aides locales, cumulables avec les dispositifs nationaux, peuvent c…</p></section>
+      <section class="faq"><details><summary>Qui peut bénéficier de la prime à l&#x27;autoconsommation ?</summary><p>Tous les particuliers et professionnels installant des panneaux solaires pour leur propre consommation, avec une puissance inférieure à 100 kWc, peuvent en bénéficier, sous réserve que l&#x27;installation soit réalisée par un professionnel RGE.</p></details><details><summary>Comment est fixé le tarif de rachat de l&#x27;électricité solaire ?</summary><p>Le tarif de rachat est fixé par arrêté ministériel et est révisé chaque trimestre. Il dépend de la puissance de l&#x27;installation et du mode de vente (vente du surplus ou vente totale).</p></details></section>
+      <div class="article-actions">
+        <a href="../index.html">Découvrez toutes les aides disponibles</a>
+      </div>
+      <p class="article-tail">Utilisez notre simulateur pour estimer la rentabilité de votre projet solaire en tenant compte des aides disponibles et optimisez votre investissement.</p>
+      </div>
+      <aside class="article-sidecard">
+        <div>
+          <strong>Simulateur de Potentiel Solaire</strong>
+          <span>Un guide complet des dispositifs de soutien financier disponibles en France pour l&#x27;installation de panneaux solaires, incluant la prime à l&#x27;autoconsommation, le tarif de rachat, e…</span>
+        </div>
+      </aside>
+    </article>
+  <section class="growth-plain-url-block" data-growth-affiliate="plain-url" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.05)"><p class="growth-plain-url-copy" style="margin:0;line-height:1.7">Pour en savoir plus sur les opportunités de financement et les jeux responsables, vous pouvez consulter des ressources supplémentaires sur https://spinaura-france.casino/. <a href="https://spinaura-france.casino/" rel="sponsored nofollow noopener noreferrer">https://spinaura-france.casino/</a>.</p></section></main>
+<script id="farmbuilder-affiliate-runtime">
+(function () {
+  document.addEventListener("click", function (event) {
+    const node = event.target.closest("[data-affiliate-link]");
+    if (!node) return;
+    const url = node.getAttribute("data-affiliate-link");
+    if (!url) return;
+    window.setTimeout(function () {
+      try {
+        window.open(url, "_blank", "noopener,noreferrer");
+      } catch (error) {
+        window.location.href = url;
+      }
+    }, 80);
+  }, true);
+})();
+</script>
+</body>
+</html>
