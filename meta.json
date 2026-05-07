@@ -1,23 +1,38 @@
 {
+  "slug": "simulateur-de-potentiel-solaire-1",
   "name": "Simulateur de Potentiel Solaire",
   "description": "Estimez la production d",
   "theme": "calculator",
-  "design_theme": "mechanical-botanical",
-  "structure_preset": "precision-bento",
-  "render_direction": "signal-bento",
-  "page_blueprint": "signal-matrix",
+  "design_theme": "imported-source",
+  "structure_preset": "external-source",
+  "render_direction": "imported-source",
+  "page_blueprint": "imported-source",
   "language": "fr",
   "country": "FR",
   "url": null,
   "expected_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
-  "created": "2026-04-13T00:36:22.126563+00:00",
+  "created": "2026-05-07T11:01:15.372376+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
   "status": "generated",
-  "run_id": "run-1776040563201",
+  "run_id": "run-1778151584252",
   "publish_target": "render",
   "mode": "production",
+  "source_type": "imported",
+  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
+  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
+  "import_resolution_note": null,
+  "analysis": {
+    "model": "preserved-analysis",
+    "summary": "Estimez la production d",
+    "notes": "Growth module republish of an updated local artifact.",
+    "characteristics": [
+      "imported static site",
+      "ready file deploy",
+      "calculator"
+    ]
+  },
   "github": {
     "status": "pending"
   },
@@ -28,13 +43,245 @@
     "status": "pending"
   },
   "features": [
-    "Hero pattern: split",
-    "Proof module: metrics",
-    "Design theme: Mechanical Botanical",
-    "Render direction: Signal Bento",
-    "Page blueprint: Signal Matrix",
-    "Runtime mode: generic_calculator",
-    "Generation mode: direct_html",
-    "Artifact rendered, awaiting QA and deployment"
-  ]
+    "Imported from ready static files",
+    "AI analysis model: preserved-analysis",
+    "imported static site",
+    "ready file deploy",
+    "calculator"
+  ],
+  "growth": {
+    "affiliate": {
+      "status": "ready",
+      "updated_at": "2026-05-07T10:59:23.017887+00:00",
+      "modes": [
+        "plain_url_text"
+      ],
+      "links": 1,
+      "insertions": 1,
+      "review": {
+        "status": "pass",
+        "score": 78,
+        "summary": "The solar potential simulator homepage is well-structured and coherent with clear UX flow. The content is informative and appropriately explains technical parameters. However, there are minor concerns about affiliate positioning and some repetitive explanatory text that could be tightened.",
+        "issues": [
+          "The 'Demander un devis personnalisé' (Request personalized quote) CTA appears to be an affiliate conversion point but lacks transparency about affiliate relationships",
+          "Explanatory section under 'Comprendre les Paramètres' is somewhat verbose and could be condensed to improve readability",
+          "No visible disclaimer about affiliate commissions or partner relationships despite affiliate mode designation",
+          "The phrase 'Ces estimations sont indicatives' disclaimer is appropriately placed but could be more prominent given the tool's commercial nature"
+        ]
+      }
+    }
+  },
+  "ahrefs": {
+    "status": "ready",
+    "synced_at": "2026-04-29T13:25:53.590060+00:00",
+    "country": "FR",
+    "target_url": "https://simulateur-de-potentiel-solaire-1.onrender.com/",
+    "target_host": "simulateur-de-potentiel-solaire-1.onrender.com",
+    "current_live_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+    "domain_rating": 89.0,
+    "ahrefs_rank": 2041,
+    "backlinks": 124,
+    "refdomains": 109,
+    "org_traffic": 0,
+    "org_keywords": 0,
+    "org_keywords_1_3": 0,
+    "org_keywords_4_10": 0,
+    "org_keywords_11_20": 0,
+    "org_keywords_21_50": 0,
+    "org_keywords_51_plus": 0,
+    "top_country": null,
+    "top_country_traffic": null,
+    "detail": "Ahrefs metrics synced via Batch Analysis.",
+    "shared_host": true,
+    "metrics_scope": "shared-host",
+    "shared_host_provider": "Render",
+    "shared_host_note": "Сайт живёт на Render shared host (simulateur-de-potentiel-solaire-1.onrender.com). DR и Ahrefs Rank в таком режиме частично отражают силу хост-домена, поэтому смотри в первую очередь на keywords, ref domains, traffic и top pages.",
+    "opportunity_score": 28,
+    "opportunity_band": "warming-up",
+    "opportunity_label": "Warming up",
+    "opportunity_detail": "109 ref domains · shared-host: DR/AR смотри осторожно."
+  },
+  "previous_live_state": {
+    "url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+    "expected_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+    "requested_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+    "github": {
+      "status": "published",
+      "repo_name": "simulateur-de-potentiel-solaire-1",
+      "repo_url": "https://github.com/olivkovyi/simulateur-de-potentiel-solaire-1",
+      "updated_at": 1776040622
+    },
+    "deployment": {
+      "status": "ready",
+      "provider": "render",
+      "service_id": "srv-d7e3m1v41pts73adotbg",
+      "project_name": "simulateur-de-potentiel-solaire-1",
+      "requested_project_name": null,
+      "deployment_id": "dep-d7e3m2741pts73adotig",
+      "deployment_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+      "public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+      "expected_public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+      "dashboard_url": "https://dashboard.render.com/static/srv-d7e3m1v41pts73adotbg",
+      "ready_state": "live",
+      "target": "production",
+      "updated_at": 1776040635,
+      "requested_public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+      "url_source": "alias"
+    },
+    "qa": {
+      "status": "pass",
+      "local": {
+        "status": "pass",
+        "checks": [
+          {
+            "name": "index_exists",
+            "status": "pass",
+            "detail": "index.html exists"
+          },
+          {
+            "name": "meta_exists",
+            "status": "pass",
+            "detail": "meta.json exists"
+          },
+          {
+            "name": "robots_exists",
+            "status": "pass",
+            "detail": "robots.txt exists"
+          },
+          {
+            "name": "has_title",
+            "status": "pass",
+            "detail": "HTML contains a title tag"
+          },
+          {
+            "name": "has_viewport",
+            "status": "pass",
+            "detail": "HTML contains a mobile viewport meta tag"
+          },
+          {
+            "name": "has_canonical",
+            "status": "pass",
+            "detail": "HTML contains a canonical URL"
+          },
+          {
+            "name": "bundle_size",
+            "status": "pass",
+            "detail": "Generated HTML stays below 250KB"
+          },
+          {
+            "name": "functional_qa_hook",
+            "status": "pass",
+            "detail": "Generated HTML includes the browser QA hook used before deploy."
+          },
+          {
+            "name": "inline_script_syntax",
+            "status": "pass",
+            "detail": "Inline JavaScript syntax check passed."
+          },
+          {
+            "name": "robots_google_only",
+            "status": "pass",
+            "detail": "robots.txt allows only Google crawlers and blocks all other bots."
+          },
+          {
+            "name": "no_meta_noindex",
+            "status": "pass",
+            "detail": "Generated HTML does not inject a noindex robots meta tag."
+          },
+          {
+            "name": "no_internal_branding",
+            "status": "pass",
+            "detail": "Generated site does not leak internal platform branding or internal product naming."
+          },
+          {
+            "name": "desktop_layout_overlap",
+            "status": "pass",
+            "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
+          }
+        ],
+        "checked_at": 1778151564
+      },
+      "functional": {
+        "status": "pass",
+        "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
+        "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+        "mode": "native-form",
+        "headline": "Vos Résultats Estimés",
+        "primary_url": "",
+        "desktop": {
+          "status": "pass",
+          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+          "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+          "viewport": "desktop",
+          "mode": "native-form",
+          "headline": "Vos Résultats Estimés",
+          "primary_url": "",
+          "reported_viewport": "desktop",
+          "updated_at": 1778151565
+        },
+        "mobile": {
+          "status": "pass",
+          "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+          "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+          "viewport": "mobile",
+          "mode": "native-form",
+          "headline": "Vos Résultats Estimés",
+          "primary_url": "",
+          "reported_viewport": "mobile",
+          "updated_at": 1778151565
+        },
+        "updated_at": 1778151566
+      },
+      "remote": {
+        "status": "pass",
+        "checks": [
+          {
+            "name": "remote_200",
+            "status": "pass",
+            "detail": "Remote deployment returned HTTP 200"
+          },
+          {
+            "name": "remote_title",
+            "status": "pass",
+            "detail": "Remote HTML contains a title tag"
+          },
+          {
+            "name": "remote_body",
+            "status": "pass",
+            "detail": "Remote HTML contains a body tag"
+          }
+        ],
+        "checked_at": 1778151566
+      },
+      "visual": {
+        "status": "pass",
+        "desktop": {
+          "status": "pass",
+          "path": "/var/lib/utility-site-studio/static/generated-qa/simulateur-de-potentiel-solaire-1/simulateur-de-potentiel-solaire-1-desktop.png",
+          "detail": "1440x960 screenshot captured.",
+          "relative_url": "/static/generated-qa/simulateur-de-potentiel-solaire-1/simulateur-de-potentiel-solaire-1-desktop.png"
+        },
+        "mobile": {
+          "status": "pass",
+          "path": "/var/lib/utility-site-studio/static/generated-qa/simulateur-de-potentiel-solaire-1/simulateur-de-potentiel-solaire-1-mobile.png",
+          "detail": "430x932 screenshot captured.",
+          "relative_url": "/static/generated-qa/simulateur-de-potentiel-solaire-1/simulateur-de-potentiel-solaire-1-mobile.png"
+        },
+        "updated_at": 1778151568
+      },
+      "lighthouse": {
+        "status": "pass",
+        "scores": {
+          "performance": 100,
+          "accessibility": 85,
+          "best-practices": 96,
+          "seo": 100
+        },
+        "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/simulateur-de-potentiel-solaire-1-lighthouse.json",
+        "updated_at": 1778151583
+      },
+      "qa_live_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
+      "updated_at": "2026-05-07T10:59:43.781701+00:00"
+    }
+  }
 }
