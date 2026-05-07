@@ -11,17 +11,17 @@
   "country": "FR",
   "url": null,
   "expected_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
-  "created": "2026-05-07T11:01:15.372376+00:00",
+  "created": "2026-05-07T11:14:54.640323+00:00",
   "owner_user_id": "user-1774822953462",
   "owner_username": "admin",
   "owner_display_name": "Administrator",
   "status": "generated",
-  "run_id": "run-1778151584252",
+  "run_id": "run-1778152428249",
   "publish_target": "render",
   "mode": "production",
   "source_type": "imported",
-  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
-  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778151447165/simulateur-de-potentiel-solaire-1",
+  "import_source_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1",
+  "import_root_path": "/var/lib/utility-site-studio/data/growth-republish/growth-1778152198723/simulateur-de-potentiel-solaire-1",
   "import_resolution_note": null,
   "analysis": {
     "model": "preserved-analysis",
@@ -69,6 +69,40 @@
           "The phrase 'Ces estimations sont indicatives' disclaimer is appropriately placed but could be more prominent given the tool's commercial nature"
         ]
       }
+    },
+    "content": {
+      "status": "ready",
+      "updated_at": "2026-05-07T11:13:28.014670+00:00",
+      "article_count": 1,
+      "anchor_article_count": 0,
+      "plain_url_article_count": 1,
+      "batch_anchor_article_count": 1,
+      "batch_plain_url_article_count": 4,
+      "total_batch_articles": 5,
+      "links": 1,
+      "anchor_keywords": [
+        "spinaura casino"
+      ],
+      "section_title": "Approfondissez Votre Projet Solaire",
+      "pages": [
+        {
+          "slug": "aides-subventions-panneaux-solaires",
+          "path": "/var/lib/utility-site-studio/sites/simulateur-de-potentiel-solaire-1/insights/aides-subventions-panneaux-solaires.html",
+          "title": "Comprendre les Aides et Subventions pour l'Installation Solaire en France",
+          "link_mode": "plain_url_text"
+        }
+      ],
+      "review": {
+        "status": "pass",
+        "score": 82,
+        "summary": "The homepage excerpt presents a functional solar potential simulator with clear parameter explanations and logical UX flow. Content is coherent, well-organized, and avoids spammy tactics. Minor concerns around repetitive CTA placement and generic disclaimers, but overall quality is solid for a utility site.",
+        "issues": [
+          "Disclaimer text ('Ces estimations sont indicatives...') feels generic and could be more specific to user needs",
+          "Two CTAs in close proximity ('Calculer mon Potentiel Solaire' and 'Demander un devis personnalisé') may dilute conversion focus",
+          "Parameter explanations are helpful but slightly verbose for a homepage—could be condensed",
+          "No visible issues with the linked subpage title, though full content review would be needed"
+        ]
+      }
     }
   },
   "ahrefs": {
@@ -109,7 +143,7 @@
       "status": "published",
       "repo_name": "simulateur-de-potentiel-solaire-1",
       "repo_url": "https://github.com/olivkovyi/simulateur-de-potentiel-solaire-1",
-      "updated_at": 1776040622
+      "updated_at": 1778151684
     },
     "deployment": {
       "status": "ready",
@@ -117,14 +151,14 @@
       "service_id": "srv-d7e3m1v41pts73adotbg",
       "project_name": "simulateur-de-potentiel-solaire-1",
       "requested_project_name": null,
-      "deployment_id": "dep-d7e3m2741pts73adotig",
+      "deployment_id": "dep-d7u72rog4nts73eu8mv0",
       "deployment_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
       "public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
       "expected_public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
       "dashboard_url": "https://dashboard.render.com/static/srv-d7e3m1v41pts73adotbg",
       "ready_state": "live",
       "target": "production",
-      "updated_at": 1776040635,
+      "updated_at": 1778151703,
       "requested_public_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
       "url_source": "alias"
     },
@@ -199,38 +233,38 @@
             "detail": "Editorial desktop layout avoids negative overlap offsets on the tool panel"
           }
         ],
-        "checked_at": 1778151564
+        "checked_at": 1778152408
       },
       "functional": {
         "status": "pass",
         "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
-        "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+        "target_url": "http://127.0.0.1:37417/index.html?__qa=functional",
         "mode": "native-form",
         "headline": "Vos Résultats Estimés",
         "primary_url": "",
         "desktop": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:37417/index.html?__qa=functional",
           "viewport": "desktop",
           "mode": "native-form",
           "headline": "Vos Résultats Estimés",
           "primary_url": "",
           "reported_viewport": "desktop",
-          "updated_at": 1778151565
+          "updated_at": 1778152409
         },
         "mobile": {
           "status": "pass",
           "detail": "Le formulaire natif a mis a jour la zone de resultat.",
-          "target_url": "http://127.0.0.1:44565/index.html?__qa=functional",
+          "target_url": "http://127.0.0.1:37417/index.html?__qa=functional",
           "viewport": "mobile",
           "mode": "native-form",
           "headline": "Vos Résultats Estimés",
           "primary_url": "",
           "reported_viewport": "mobile",
-          "updated_at": 1778151565
+          "updated_at": 1778152410
         },
-        "updated_at": 1778151566
+        "updated_at": 1778152410
       },
       "remote": {
         "status": "pass",
@@ -251,7 +285,7 @@
             "detail": "Remote HTML contains a body tag"
           }
         ],
-        "checked_at": 1778151566
+        "checked_at": 1778152410
       },
       "visual": {
         "status": "pass",
@@ -267,7 +301,7 @@
           "detail": "430x932 screenshot captured.",
           "relative_url": "/static/generated-qa/simulateur-de-potentiel-solaire-1/simulateur-de-potentiel-solaire-1-mobile.png"
         },
-        "updated_at": 1778151568
+        "updated_at": 1778152413
       },
       "lighthouse": {
         "status": "pass",
@@ -278,10 +312,10 @@
           "seo": 100
         },
         "report_path": "/var/lib/utility-site-studio/data/qa/lighthouse/simulateur-de-potentiel-solaire-1-lighthouse.json",
-        "updated_at": 1778151583
+        "updated_at": 1778152428
       },
       "qa_live_url": "https://simulateur-de-potentiel-solaire-1.onrender.com",
-      "updated_at": "2026-05-07T10:59:43.781701+00:00"
+      "updated_at": "2026-05-07T11:13:48.086475+00:00"
     }
   }
 }
