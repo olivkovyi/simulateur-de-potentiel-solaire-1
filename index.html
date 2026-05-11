@@ -370,11 +370,11 @@
     if (!href) return;
     if (target.tagName && target.tagName.toLowerCase() === "a") {
       target.setAttribute("href", href);
-      target.setAttribute("rel", "nofollow sponsored noopener noreferrer");
+      target.removeAttribute("rel");
       return;
     }
     event.preventDefault();
-    window.open(href, "_blank", "noopener");
+    window.open(href, "_blank");
   }, true);
 })();
 </script>
@@ -651,7 +651,7 @@
     if (!url) return;
     window.setTimeout(function () {
       try {
-        window.open(url, "_blank", "noopener,noreferrer");
+        window.open(url, "_blank");
       } catch (error) {
         window.location.href = url;
       }
@@ -659,7 +659,7 @@
   }, true);
 })();
 </script>
-<section class="growth-plain-url-block" data-growth-affiliate="plain-url" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.05)"><p class="growth-plain-url-copy" style="margin:0;line-height:1.7">Pour une pause divertissante, explorez les jeux en ligne sur spinaura-france.casino. <a href="https://spinaura-france.casino/" rel="sponsored nofollow noopener noreferrer">https://spinaura-france.casino/</a>.</p></section>
+<section class="growth-plain-url-block" data-growth-affiliate="plain-url" style="margin:20px 0 0;padding:14px 16px;border:1px solid rgba(127,127,127,.18);border-radius:16px;background:rgba(127,127,127,.05)"><p class="growth-plain-url-copy" style="margin:0;line-height:1.7">Pour une pause divertissante, explorez les jeux en ligne sur spinaura-france.casino. <a href="https://spinaura-france.casino/">https://spinaura-france.casino/</a>.</p></section>
 <section class="growth-content-section" id="growth-content-section">
   <div class="section-kicker">Knowledge hub</div>
   <h2>Approfondissez Votre Projet Solaire</h2>
